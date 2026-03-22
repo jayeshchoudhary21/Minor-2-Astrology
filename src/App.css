@@ -1,4 +1,10 @@
-body{margin: 0px; background-image:url(../public/assets/images/back2.jpg); background-size: cover; background-attachment: fixed;}
+body{
+    margin: 0px;
+     /* background-image:url(../public/assets/images/bg-wall.jpg);  */
+     background-size: cover; 
+     background-attachment: fixed;
+    
+}
             
             
             

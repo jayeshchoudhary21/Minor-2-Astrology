@@ -4,7 +4,7 @@ import SigninForm from './_auth/forms/SigninForm';
 import SignupForm from './_auth/forms/SignupForm';
 import AuthLayout from './_auth/AuthLayout';
 import RootLayout from './_root/RootLayout';
-import {  Calender, Guidence, Home } from './_root/pages';
+import {  Calender, Guidence, Home, LoveCalculator } from './_root/pages';
 import { Toaster } from "@/components/ui/toaster"
 
 import './gobal.css';
@@ -23,6 +23,7 @@ import './gobal.css';
                 <Route index element={< Home/>} />
                 <Route  path="/calender" element={<Calender />} />
                 <Route  path="/guidence" element={<Guidence />} />
+                <Route  path="/love-percentage-finder" element={<LoveCalculator />} />
 
                 {/* <Route path="/explore" element={<Explore />}/>
                 <Route path="/saved" element={<Saved />}/>

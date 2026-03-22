@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent , ReactNode} from 'react';
+import  { useState, ChangeEvent, FormEvent , ReactNode} from 'react';
 import { CSSProperties } from 'react';
 
 const AstrologyInsights = () => {
@@ -16,7 +16,7 @@ const AstrologyInsights = () => {
     "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius"
   ];
 
-  const compliments = [
+  const compliments = [ 
     "You have a great sense of humor.",
     "Your smile lights up the room.",
     "You bring out the best in people.",
@@ -47,8 +47,28 @@ const AstrologyInsights = () => {
     "Your confidence is inspiring.",
     "You're a great mentor and teacher.",
     "Your dedication is remarkable.",
-    "You make everyone feel valued and respected."
+    "You make everyone feel valued and respected.",
+    "Your laughter is truly uplifting.",
+    "You make even the ordinary feel extraordinary.",
+    "You radiate wisdom and warmth.",
+    "You handle challenges with such grace.",
+    "You make people feel seen and heard.",
+    "Your enthusiasm is truly motivating.",
+    "You always know how to lift others up.",
+    "You're a calming presence in stressful times.",
+    "You think deeply and act kindly.",
+    "You turn ideas into reality with ease.",
+    "You inspire others to be their best selves.",
+    "You're a beacon of hope and encouragement.",
+    "You're someone people naturally look up to.",
+    "You bring joy wherever you go.",
+    "You're incredibly emotionally intelligent.",
+    "Your empathy makes you stand out.",
+    "You're always growing and improving.",
+    "You have a gift for making people smile.",
+    "You're one of a kind in the best way."
   ];
+  
 
   const victimCardCompliments = [
     "You always do good for others, but they don't appreciate it.",
@@ -70,8 +90,29 @@ const AstrologyInsights = () => {
     "You go out of your way for others, but they don't return the favor.",
     "You share everything you have, but people still ask for more.",
     "You're a true friend, even when others don't treat you the same.",
-    "You keep helping others, even when they don't say thank you."
+    "You keep helping others, even when they don't say thank you.",
+    "You support others' dreams, while yours are overlooked.",
+    "You're the one who checks in, but few check on you.",
+    "You're expected to stay strong, even when you're breaking inside.",
+    "You show up for people, even when you're barely holding on.",
+    "You're constantly giving, even when your own cup is empty.",
+    "You say yes to help, even when you're exhausted.",
+    "You're judged harshly, even when your heart is pure.",
+    "You endure quietly so others don't feel uncomfortable.",
+    "You stay silent to keep the peace, even when you're hurting.",
+    "You're blamed for things you tried to fix.",
+    "You hide your pain so others can smile.",
+    "You're taken for granted, but still choose to care.",
+    "You're often left out, but still include others.",
+    "You offer comfort but rarely receive it.",
+    "You make time for others, even when no one makes time for you.",
+    "You're expected to understand, but rarely understood.",
+    "You're always kind, even to those who hurt you.",
+    "You carry burdens silently so others don’t have to.",
+    "You apologize even when you're not wrong.",
+    "You love deeply, even when it hurts."
   ];
+  
 
   const recommendations = [
     "Feed a street dog and spread kindness.",
@@ -103,8 +144,30 @@ const AstrologyInsights = () => {
     "Adopt an eco-friendly habit like cycling or walking more.",
     "Spend time with children and learn from their innocence.",
     "Call an old friend and reconnect.",
-    "Learn to say no to things that don't serve your happiness."
+    "Learn to say no to things that don't serve your happiness.",
+    "Take a break and do nothing without guilt.",
+    "Create a playlist of songs that uplift your spirit.",
+    "Write a positive review for a local service you appreciated.",
+    "Pick up litter at a park or beach to help your community.",
+    "Compliment yourself in the mirror every morning.",
+    "Practice deep breathing exercises to reduce stress.",
+    "Host a game night or potluck with friends.",
+    "Watch a documentary to learn about a new topic.",
+    "Start a small garden or grow herbs at home.",
+    "Support someone's small business online with a share or purchase.",
+    "Create a handmade gift for someone special.",
+    "Wake up early and enjoy the quiet morning hours.",
+    "Say thank you more often and sincerely.",
+    "Practice forgiving someone—even if just in your heart.",
+    "Turn off notifications and enjoy uninterrupted time.",
+    "Donate books you've already read to a library or school.",
+    "Spend a day without complaining.",
+    "Learn something new from someone older than you.",
+    "Challenge yourself to a no-spend day or week.",
+    "Celebrate your small wins, no matter how minor.",
+    "Write kind notes and leave them in public places."
   ];
+  
 
   const predictions = [
     "You will become a crorepati!",
@@ -126,8 +189,49 @@ const AstrologyInsights = () => {
     "A new friendship will change your life.",
     "Prepare for a future full of opportunities.",
     "A career breakthrough is on the horizon.",
-    "You will leave a legacy of inspiration."
+    "You will leave a legacy of inspiration.",
+    "A long-awaited wish is about to come true.",
+    "An unexpected connection will open new doors.",
+    "You will inspire others more than you know.",
+    "The next chapter of your life will be your best yet.",
+    "You are about to step into your true purpose.",
+    "A golden chance is coming—grab it!",
+    "Your voice will reach people far and wide.",
+    "You will soon celebrate a major achievement.",
+    "You will reconnect with someone who matters deeply.",
+    "A burst of creativity will lead to something amazing.",
+    "Your leadership will guide others to success.",
+    "Something you've lost will return to you in a new form.",
+    "Your dreams are aligning with your destiny.",
+    "You will soon receive recognition for your efforts.",
+    "Love is entering your life in an unexpected way.",
+    "You are attracting abundance and joy.",
+    "You will turn a passion into a profession.",
+    "A mentor will appear to guide you forward.",
+    "Your inner strength will surprise even you.",
+    "You will soon receive a message that changes everything.",
+    "You are planting seeds that will grow into greatness.",
+    "A calm and peaceful period is on its way.",
+    "New doors will open where old ones closed.",
+    "You are about to glow up emotionally and spiritually.",
+    "A leap of faith will lead you to success.",
+    "Your next idea will be your best one yet.",
+    "Happiness is arriving in a way you never expected.",
+    "You will meet someone who truly understands you.",
+    "You are being prepared for something extraordinary.",
+    "What once felt impossible will soon feel effortless.",
+    "You will inspire a movement or community.",
+    "A lucky break is coming—stay alert.",
+    "You’re about to turn a corner in your journey.",
+    "You will rise stronger than ever before.",
+    "Your compassion will attract the right people.",
+    "An old goal will find new life in your heart.",
+    "You’re stepping into a season of miracles.",
+    "An adventure you didn’t plan will become unforgettable.",
+    "You will prove your doubts wrong.",
+    "Your future holds more joy than your past ever imagined."
   ];
+  
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -151,13 +255,13 @@ const AstrologyInsights = () => {
     const second_message = `🔮 Your Zodiac sign is ${zodiacSigns[monthNum - 1]}.`;
     const third_message = ` 💖 Compliment of the day: ${compliments[dayNum - 1]}`;
 
-    let index = Math.floor(Math.random() * 20);
+    let index = Math.floor(Math.random() * 40);
     const fourth_message =`🧙‍♂️ Your 'Victim Card' strength level is ${victimCardCompliments[index]}`;
 
-    index = (name.length * surname.length * yearNum) % 30;
+    index = (name.length * surname.length * yearNum) % 50;
     const fifth_message =`📌 We Recommend: ${recommendations[index]}` ;
 
-    index = (dayNum * monthNum * yearNum) % 20;
+    index = (dayNum * monthNum * yearNum) % 60;
     const sixth_message = `✨ Future Insight: ${ predictions[index]}`;
 
     // setResult(`${<h1>{first_message}</h1>} ${second_message} ${third_message} ${fourth_message} Our Recommendation for you: ${fifth_message} Your Future Prediction is: ${sixth_message}`);
@@ -180,7 +284,7 @@ const AstrologyInsights = () => {
   };
 
   return (
-    <div style={styles.body} className='mt-9'>
+    <div style={styles.body} className='bg-[#0a111b] w-[100vw] mt-[40px] overflow-hidden'>
       <div style={styles.container}>
         <h1 style={styles.heading} >Astrology Insights</h1>
         <form onSubmit={handleSubmit} style={styles.form}>
@@ -262,7 +366,7 @@ const AstrologyInsights = () => {
 const styles: Record<string, CSSProperties> = {
   body: {
     fontFamily: 'Arial, sans-serif',
-    margin: '40px',
+     
     padding: 0,
 
     minHeight: '100vh',
